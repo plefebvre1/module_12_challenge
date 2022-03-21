@@ -1,0 +1,356 @@
+(base)
+peter@PLXPS13 MINGW64 ~
+$ conda activate dev
+(dev)
+peter@PLXPS13 MINGW64 ~
+$ cd FinTech_Workspace/
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace
+$ git clone https://github.com/plefebvre1/module_12_challenge.git
+Cloning into 'module_12_challenge'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), done.
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace
+$ cd module_12_challenge/
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Resources/
+        credit_risk_resampling.ipynb
+        report-template.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git add Resources/
+warning: CRLF will be replaced by LF in Resources/lending_data.csv.
+The file will have its original line endings in your working directory
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git add credit_risk_resampling.ipynb
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git add report-template.md
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Resources/lending_data.csv
+        new file:   credit_risk_resampling.ipynb
+        new file:   report-template.md
+
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git commit -m 'Given starter code'
+[main f30ea99] Given starter code
+ 3 files changed, 78399 insertions(+)
+ create mode 100644 Resources/lending_data.csv
+ create mode 100644 credit_risk_resampling.ipynb
+ create mode 100644 report-template.md
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 526.07 KiB | 5.31 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/plefebvre1/module_12_challenge.git
+   0194595..f30ea99  main -> main
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ touch terminal_history.txt
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git add terminal_history.txt
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git commit -m 'terminal history initialized'
+[main 6ef9264] terminal history initialized
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 terminal_history.txt
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 294 bytes | 294.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/plefebvre1/module_12_challenge.git
+   f30ea99..6ef9264  main -> main
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   credit_risk_resampling.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git add credit_risk_resampling.ipynb
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git commit -m 'Data split into training and test datasets'
+[main fe7aa0b] Data split into training and test datasets
+ 1 file changed, 20 insertions(+), 20 deletions(-)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 683 bytes | 683.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/plefebvre1/module_12_challenge.git
+   6ef9264..fe7aa0b  main -> main
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   credit_risk_resampling.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git add credit_risk_resampling.ipynb
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git commit -m 'Logistic regression model created with initial data'
+[main 2781e7b] Logistic regression model created with initial data
+ 1 file changed, 20 insertions(+), 23 deletions(-)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 722 bytes | 722.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/plefebvre1/module_12_challenge.git
+   fe7aa0b..2781e7b  main -> main
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git add credit_risk_resampling.ipynb
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git commit -m 'Logistic regression model created with oversampled data'
+[main 6783c4a] Logistic regression model created with oversampled data
+ 1 file changed, 32 insertions(+), 28 deletions(-)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 672 bytes | 672.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/plefebvre1/module_12_challenge.git
+   2781e7b..6783c4a  main -> main
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    report-template.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Credit Risk Analysis.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git add Credit\ Risk\ Analysis.md
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git rm report-template.md
+rm 'report-template.md'
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    report-template.md -> Credit Risk Analysis.md
+
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    report-template.md -> Credit Risk Analysis.md
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Credit Risk Analysis.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Credit Risk Analysis Report.md
+
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git rm Credit\ Risk\ Analysis.md
+rm 'Credit Risk Analysis.md'
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git add Credit\ Risk\ Analysis\ Report.md
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    report-template.md -> Credit Risk Analysis Report.md
+
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git commit -m 'Renamed report file'
+[main 7f570ee] Renamed report file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename report-template.md => Credit Risk Analysis Report.md (100%)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 266 bytes | 266.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/plefebvre1/module_12_challenge.git
+   6783c4a..7f570ee  main -> main
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        report-template.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        report-template.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Credit Risk Analysis Report.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        report-template.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Credit Risk Analysis Report.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git add Credit\ Risk\ Analysis\ Report.md
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git commit -m 'Analysis report completed'
+[main e13131c] Analysis report completed
+ 1 file changed, 26 insertions(+), 31 deletions(-)
+ rewrite Credit Risk Analysis Report.md (91%)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.07 KiB | 1.07 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/plefebvre1/module_12_challenge.git
+   7f570ee..e13131c  main -> main
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_12_challenge (main)
+$
